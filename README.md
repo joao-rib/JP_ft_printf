@@ -1,7 +1,7 @@
 # ft_printf
 My version of the printf function
 
-##General notes
+## General notes
 
 ### Functions from <stdarg.h>
 
@@ -14,12 +14,23 @@ va_copy | void	va_copy(va_list dest, va_list src) | Copies list from src to dest
 
 ### Cipher
 
-%c	Single character
-%s	String
-%p	Pointer (hexadecimal format)
-%d	Integer (decimal)
-%i	Integer (base 10)
-%u	Unsigned decimal number
-%x	Integer (base 16, lower case)
-%X	Integer (base 16, upper case)
-%%	Just the percent sign
+Conversion | Description
+--- | ---
+%c | Single character
+%s | String
+%p | Pointer (hexadecimal format)
+%d | Integer (decimal)
+%i | Integer (base 10)
+%u | Unsigned decimal number
+%x | Integer (base 16, lower case)
+%X | Integer (base 16, upper case)
+%% | Just the percent sign
+
+Flag | Compatible with | Description
+--- | ---
+%[number] | all | Print result [number] spaces to the right
+%-[number] | all | Print result formatted to the left. Returns same result as without the '-'
+%0[number] | all | Print result after [number] zeros
+%# | %x, %X | Prints result prefixed by 0x or 0X
+%+ | %d, %i, %u, %x, %X | Prints positive numbers prefixed by '+', or negative numbers prefixed by '-'
+%[space] | %d, %i, %u, %x, %X | Prints positive numbers prefixed by ' ', or negative numbers prefixed by '-'

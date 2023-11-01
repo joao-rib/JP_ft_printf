@@ -12,7 +12,7 @@ va_arg | type	va_arg(va_list ap, type) | Defines type for an argument, saves in 
 va_end | void	va_end(va_list ap) | Ends argument list ap
 va_copy | void	va_copy(va_list dest, va_list src) | Copies list from src to dest (both must then be ended)
 
-### Conversers
+### Conversion and Flags
 
 Conversion | Description
 --- | ---
@@ -26,10 +26,8 @@ Conversion | Description
 %X | Integer (base 16, upper case)
 %% | Just the percent sign
 
-### Flags
-
 Flag | Compatible with | Description
---- | ---
+--- | --- | ---
 %[number] | all | Print result [number] spaces to the right
 %-[number] | all | Print result formatted to the left. Returns same result as without the '-'
 %0[number] | all | Print result after [number] zeros

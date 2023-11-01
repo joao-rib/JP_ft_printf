@@ -26,6 +26,7 @@ Conversion | Description
 %X | Integer (base 16, upper case)
 %% | Just the percent sign
 
+
 Flag | Compatible with | Description
 --- | ---
 %[number] | all | Print result [number] spaces to the right

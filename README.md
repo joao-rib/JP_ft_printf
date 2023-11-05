@@ -7,10 +7,10 @@ My version of the printf function
 
 Function | Format | Description
 --- | --- | ---
-va_start | void	va_start(va_list ap, param) | Starts argument list ap, applied to param
-va_arg | type	va_arg(va_list ap, type) | Defines type for an argument, saves in respective variable
-va_end | void	va_end(va_list ap) | Ends argument list ap
-va_copy | void	va_copy(va_list dest, va_list src) | Copies list from src to dest (both must then be ended)
+va_start | `void	va_start(va_list ap, param)` | Starts argument list ap, applied to param
+va_arg | `type	va_arg(va_list ap, type)` | Defines type for an argument, saves in respective variable
+va_end | `void	va_end(va_list ap)` | Ends argument list ap
+va_copy | `void	va_copy(va_list dest, va_list src)` | Copies list from src to dest (both must then be ended)
 
 ### Conversion and Flags
 
@@ -34,3 +34,13 @@ Flag | Compatible with | Description
 %# | %x, %X | Prints result prefixed by 0x or 0X
 %+ | %d, %i, %u, %x, %X | Prints positive numbers prefixed by '+', or negative numbers prefixed by '-'
 %[space] | %d, %i, %u, %x, %X | Prints positive numbers prefixed by ' ', or negative numbers prefixed by '-'
+
+### Libft functions
+
+Function | Format | Modified?
+--- | --- | ---
+ft_putchar_fd | `int	ft_putchar_fd(char c, int fd);` | Function now returns int with value 1
+ft_putstr_fd | `int	ft_putstr_fd(char *str, int fd);` | Function now returns printed length. If str is NULL, function prints (null)
+ft_putnbr_fd | `int	ft_putnbr_fd(long n, int fd);` | Function now accepts numbers in "long" format, and returns printed length
+ft_strlen | `size_t	ft_strlen(const char *str)` | Same as libft
+ft_strchr | `char	*ft_strchr(const char *str, int c)` | Same as libft

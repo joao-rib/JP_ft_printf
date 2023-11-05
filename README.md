@@ -44,3 +44,9 @@ ft_putstr_fd | `int	ft_putstr_fd(char *str, int fd);` | Function now returns pri
 ft_putnbr_fd | `int	ft_putnbr_fd(long n, int fd);` | Function now accepts numbers in "long" format, and returns printed length
 ft_strlen | `size_t	ft_strlen(const char *str)` | Same as libft
 ft_strchr | `char	*ft_strchr(const char *str, int c)` | Same as libft
+
+### New functions
+
+Function | Format | Description | Return
+--- | --- | --- | ---
+ft_putnbr_ubase_fd | `int	ft_putnbr_ubase_fd(unsigned int nbr, char *base, int fd)` | Prints nbr to the file descriptor fd, in numerical "base" | Printed length

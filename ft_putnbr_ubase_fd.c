@@ -10,9 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "ft_printf.h"
 
-int	repeat_chars(char *str, char t)
+static int	repeat_chars(char *str, char t)
 {
 	int	i;
 	int	count;
@@ -31,7 +31,7 @@ int	repeat_chars(char *str, char t)
 		return (1);
 }
 
-int	check_valid(char *str, int b)
+static int	check_valid(char *str, int b)
 {
 	int	i;
 
@@ -72,9 +72,3 @@ int	ft_putnbr_ubase_fd(unsigned int nbr, char *base, int fd)
 	write(1, &base[aux], fd);
 	return (l);
 }
-
-/*int	main(void)
-{
-	ft_putnbr_ubase_fd(2147483648, "01234567", 1);
-	// 0123456789abcdef
-}*/

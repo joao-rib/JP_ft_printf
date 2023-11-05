@@ -22,6 +22,9 @@
 # define HEXA_LOW "0123456789abcdef"
 # define HEXA_UPP "0123456789ABCDEF"
 
+int		ft_printf(const char *string, ...);
+int		ft_putnbr_ubase_fd(unsigned int nbr, char *base, int fd);
+int		ft_putnbr_lbase_fd(unsigned long nbr, char *base, int fd);
 size_t	ft_strlen(const char *str);
 char	*ft_strchr(const char *str, int c);
 int		ft_putchar_fd(char c, int fd);

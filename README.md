@@ -50,3 +50,4 @@ ft_strchr | `char	*ft_strchr(const char *str, int c)` | Same as libft
 Function | Format | Description | Return
 --- | --- | --- | ---
 ft_putnbr_ubase_fd | `int	ft_putnbr_ubase_fd(unsigned int nbr, char *base, int fd)` | Prints nbr to the file descriptor fd, in numerical "base" | Printed length
+ft_putnbr_lbase_fd | `int	ft_putnbr_lbase_fd(unsigned long nbr, char *base, int fd)` | Prints nbr to the file descriptor fd, in numerical "base" | Printed length

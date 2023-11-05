@@ -12,9 +12,7 @@
 
 //#include "./libft/libft.h"
 #include "ft_printf.h"
-#include <stdio.h>
-
-int	ft_putnbr_ubase_fd(unsigned int nbr, char *base, int fd);
+//#include <stdio.h>
 
 static int	prf_ptr(unsigned long v)
 {
@@ -25,7 +23,7 @@ static int	prf_ptr(unsigned long v)
 	else
 	{
 		l = write(1, "0x", 2);
-		l += ft_putnbr_ubase_fd((unsigned int)v, HEXA_LOW, 1);
+		l += ft_putnbr_lbase_fd(v, HEXA_LOW, 1);
 	}
 	return (l);
 }
@@ -106,7 +104,7 @@ int	ft_printf(const char *string, ...)
 	return (0);
 }*/
 
-int	main(void)
+/*int	main(void)
 {
 	ft_printf("\nft_printf:\n");
 	ft_printf(" count: %i\n", ft_printf("NULL %s NULL", 0));
@@ -129,4 +127,4 @@ int	main(void)
 	printf("\t count: %i\n", printf("%p", &"hi"));
 	printf("\t\t count: %i\n", printf("%p", (void *) 0));
 	return (0);
-}
+}*/
